@@ -823,5 +823,16 @@ footer {
         width: 85%;
         margin: 2rem auto;
     }
-
+}
+.hov {
+    transition: all 0.3s ease-in;
+}
+.hov:hover {
+    transform: scale(1.1);
+}
+.boton-let, .boton-lett {
+    background-image: linear-gradient(45deg, #d379b9, #c27070);
+}
+.grad {
+    background-image: linear-gradient(#E1DAD2, #fff);
 }
