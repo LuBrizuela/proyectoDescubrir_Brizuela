@@ -1,0 +1,827 @@
+:root {
+    --principal: #263C4A;
+    --fuenteSecundaria: #4A667B;
+    --cuadro: #C78F8F;
+    --fondo: #E1DAD2;
+}
+
+@font-face {
+    font-family: "back";
+    src: url(../fonts/Back\ to\ Black\ Demo.ttf);
+}
+
+@font-face {
+    font-family: "bahn";
+    src: url(../fonts/BAHNSCHRIFT.TTF);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+.contenedor-header {
+    background-image: url(../img/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 45vh;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3rem;
+}
+.nav--activa a {
+    color: #777777;
+}
+li {
+    font-size: 1rem;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-family: "bahn";
+    font-weight: 700;
+    color: var(--principal);
+}
+
+.header {
+    grid-area: header;
+}
+.main {
+    grid-area: main;
+}
+.footer {
+    grid-area: footer;
+}
+.hea {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3rem;
+
+    background-color: #fff;
+    margin: 1rem;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--principal);
+}
+
+.contenedor-logo {
+    display: flex;
+    justify-content: start;
+
+}
+
+.logo {
+    font-family: "back";
+    font-size: 2rem;
+    font-weight: 100;
+    color: var(--principal);
+    margin-left: 1rem;
+}
+
+.capital {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.contenedor-titulo {
+    background-color: var(--fondo);
+    padding: 5rem;
+}
+
+.titulo {
+    color: var(--cuadro);
+    font-family: "bahn";
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.titulo1 {
+    color: #fff;
+    font-family: "back";
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+
+.contenedor-nosotros {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2-tit {
+    font-family: "back";
+    font-weight: lighter;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--principal);
+}
+
+.h3-sub {
+    font-family: "bahn";
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: var(--cuadro);
+}
+
+.p {
+    font-family: "bahn";
+    font-size: 0.8rem;
+    text-align: justify;
+}
+
+.nosotros-info {
+    margin: 2rem;
+    line-height: 2;
+}
+
+.bot-info {
+    display: flex;
+    justify-content: center;
+}
+
+.img-nos {
+    width: 100%;
+
+}
+
+.boton {
+    display: flex;
+}
+
+.tit {
+    margin-top: 1rem;
+}
+
+.boton-lett {
+    background-color: var(--cuadro);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-family: "bahn";
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.boton-let {
+    background-color: var(--cuadro);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-family: "bahn";
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.servicios {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fuenteSecundaria);
+    text-align: center;
+}
+
+.contenedor-ser {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+
+}
+
+.tes {
+    font-family: "bahn";
+    color: #fff;
+    line-height: 2;
+    text-transform: uppercase;
+    border: 3px solid #fff;
+    padding: 2rem;
+    font-size: 0.8rem;
+}
+
+.boot {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.contenedor-cont {
+    background-color: var(--fondo);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tx {
+    color: var(--principal);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+label {
+    color: var(--principal);
+    text-transform: uppercase;
+    font-family: "bahn";
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.input {
+    padding: 1rem;
+    border: none;
+}
+
+.pp {
+    color: var(--principal);
+    font-family: "bahn";
+}
+
+.bottom {
+    color: #fff;
+    background-color: var(--cuadro);
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    border: none;
+}
+
+footer {
+    background-color: var(--principal);
+    text-align: center;
+    padding: 4rem;
+}
+
+.lo {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.ti {
+    color: #fff;
+    font-family: "bahn";
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 1rem;
+}
+
+.pf {
+    margin-top: 1rem;
+    color: #fff;
+    font-family: "bahn";
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        justify-content: space-around;
+    }
+
+    .nav {
+        flex-direction: row;
+        margin-top: 2rem;
+    }
+
+    .contenedor-nosotros {
+        margin: 2rem;
+    }
+
+    .img-nos {
+        width: 500px;
+    }
+
+    .cont-img {
+        margin: 0 auto;
+    }
+
+    .contenedor-ser {
+        padding: 0 6rem
+    }
+
+    .contenedor-cont {
+        padding: 4rem;
+    }
+    .formulario {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 0.5fr) 1fr;
+        grid-template-areas: "nom tell"
+            "cor asun"
+            "men men"
+            "boton boton";
+    }
+
+    .asun {
+        grid-area: asun;
+    }
+
+    .nom {
+        grid-area: nom;
+    }
+
+    .tell {
+        grid-area: tell;
+    }
+
+    .cor {
+        grid-area: cor;
+    }
+
+    .men {
+        grid-area: men;
+    }
+
+    .campo {
+        margin: 1rem;
+    }
+
+    .bottom {
+        margin: auto;
+        grid-area: boton;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .contenedor-header {
+        min-height: 100vh;
+    }
+
+    .contenedor-nosotros {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .cont-img {
+        margin: 0;
+    }
+
+    .img-nos {
+        width: 500px;
+    }
+
+    .nosotros-info {
+        padding: 0 5rem;
+    }
+
+    .servicios {
+        margin: 0;
+        padding: 5rem;
+    }
+
+    .contenedor-ser {
+        flex-direction: row;
+
+    }
+
+    .boot {
+        position: relative;
+    }
+
+    .boton-let {
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+
+    .pp {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .formulario {
+        padding: 0 5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 0.5fr) 1fr;
+        grid-template-areas: "nom tell"
+            "cor asun"
+            "men men"
+            "boton boton";
+    }
+
+    .asun {
+        grid-area: asun;
+    }
+
+    .nom {
+        grid-area: nom;
+    }
+
+    .tell {
+        grid-area: tell;
+    }
+
+    .cor {
+        grid-area: cor;
+    }
+
+    .men {
+        grid-area: men;
+    }
+
+    .campo {
+        margin: 1rem;
+    }
+
+    .bottom {
+        margin: auto;
+        grid-area: boton;
+    }
+}
+
+/* CAPACITACIONES */
+.bor {
+    border-top: 2px solid var(--fondo);
+    margin-top: 1rem;
+}
+
+.agenda {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--fondo);
+}
+
+.bot-let {
+    background-color: var(--cuadro);
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-family: "bahn";
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.fecha {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+    background-color: var(--fondo);
+    border: 3px solid #fff;
+    border-radius: 3px;
+}
+
+.fecha__info {
+    font-family: "Bahn";
+    color: #000;
+}
+
+.horario {
+    color: var(--fecha);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.titulos {
+    color: #000;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "bahn";
+    margin: 1rem 0;
+}
+
+.nom-dis {
+    color: grey;
+    text-transform: uppercase;
+    font-family: "Bahn";
+    font-size: 1rem;
+}
+
+.calendario {
+    width: 100px;
+}
+
+.bot-ins {
+    margin: 20px auto 0 auto;
+    width: 8rem;
+    padding: 15px;
+    background-color: var(--fecha);
+    border-radius: 2rem;
+}
+
+.bot-ins__enlace {
+    color: #fff;
+    font-weight: 800;
+    font-family: "bahn";
+}
+
+
+.parrafo {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.info {
+    color: var(--fuenteSecundaria);
+    font-family: "bahn";
+}
+
+@media screen and (min-width: 768px) {
+    .fecha {
+        margin: 1rem 6rem;
+    }
+
+    .parrafo {
+        padding: 4rem;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fecha {
+        margin: 2rem;
+    }
+
+    .parrafo {
+        padding: 8rem;
+    }
+}
+
+/* SERVICIOS */
+.tit {
+    color: var(--fuenteSecundaria);
+}
+
+.equipo-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 3rem;
+}
+
+.img-equipo {
+    display: flex;
+    justify-content: center;
+}
+
+.im-eq {
+    width: 60%;
+}
+
+.cheks {
+    background-color: var(--fondo);
+    padding: 2rem;
+}
+
+.title {
+    color: var(--principal);
+    font-family: "back";
+    font-size: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 1rem;
+}
+
+.cheks__txt {
+    display: flex;
+    flex-direction: row;
+    color: var(--principal);
+    font-family: "bahn";
+    margin: 1rem;
+    font-weight: 100;
+}
+
+.icon-tabler-check {
+    background-color: #fff;
+    border-radius: 50%;
+    width: 50%;
+    height: 25%;
+    margin-right: 1rem;
+}
+
+.img-per {
+    width: 80%;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.per {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "bahn";
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+}
+
+.eq {
+    margin: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .equipo-info {
+        flex-direction: row;
+        gap: 3rem;
+        align-items: center;
+    }
+
+    .img-equipo {
+        width: 50%;
+        margin: 0;
+    }
+
+    .eq-inf {
+        width: 50%;
+    }
+
+    .icon-tabler-check {
+        width: 10%;
+    }
+
+    .img-per {
+        width: 50%;
+    }
+
+    .eq {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .contenedor-check {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+
+        margin: 2rem 5rem;
+    }
+
+    .p {
+        font-size: 1rem;
+    }
+}
+
+/* CONTACTO */
+.portada-ser {
+    margin: 0;
+}
+
+.por-ser {
+    width: 100%;
+}
+
+.contenedor-hea {
+    background-image: url(../img/portada\ cont.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 45vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 1rem;
+}
+
+
+/* BLOG */
+.contenedor-blog {
+    background-image: url(../img/escritorio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: auto;
+    height: 45vh;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 1rem;
+}
+.blog-info {
+    background-color: var(--fondo);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+.blog-info p {
+    color: var(--principal);
+    font-family: "bahn";
+    text-align: center;
+    font-size: 1rem;
+}
+.entrada,
+.entrada2 {
+    border-bottom: 8px double #e1e1e1;
+    margin: 0 1rem 2rem 1rem;
+}
+.entrada:last-of-type {
+    border-bottom: none;
+}
+.entrada2:last-of-type {
+    border-bottom: none;
+}
+.entrada__contenido {
+    margin: 0 auto;
+    font-family: "bahn";
+}
+.entrada__imagen, 
+.entrada__imagen2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.entrada__contenido h2 {
+    font-weight: 100;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--principal);
+}
+.entrada__contenido p span {
+    color: #a0a0a0;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 1rem;
+}
+.img-blog {
+    width: 70%;
+}
+@media screen and (min-width: 768px) {
+    .entrada, .entrada2 {
+        display: flex;
+        border-bottom: none;
+    }
+    .entrada2 {
+        flex-direction: row-reverse;
+    }
+    .entrada__imagen {
+        border-right: 8px double #e1e1e1;
+    }
+    .entrada__imagen2 {
+        border-left: 8px double #e1e1e1;
+    }
+    .img-blog {
+        margin: 0 4rem;
+        width: 25vw;
+    }
+    .entrada__contenido {
+        width: 60%;
+        margin: 0 4rem;
+        align-self: center;
+    }
+}
+@media screen and (min-width: 1080px) {
+    .blog-info {
+        padding: 4rem;
+    }
+    .entrada, .entrada2 {
+        width: 85%;
+        margin: 2rem auto;
+    }
+
+}
