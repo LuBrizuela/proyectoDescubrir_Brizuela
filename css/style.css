@@ -36,11 +36,6 @@
     width: auto;
     height: 45vh;
     padding: 1rem;
-
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    gap: 3rem;
 }
 .nav--activa a {
     color: #777777;
@@ -90,7 +85,6 @@ a {
 .contenedor-logo {
     display: flex;
     justify-content: start;
-
 }
 
 .logo {
@@ -98,7 +92,6 @@ a {
     font-size: 2rem;
     font-weight: 100;
     color: var(--principal);
-    margin-left: 1rem;
 }
 
 .capital {
@@ -309,7 +302,15 @@ footer {
     color: #fff;
     font-family: "bahn";
 }
-
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.356);
+    }
+}
+.nav-item a {
+    color: var(--principal) !important;
+}
 @media screen and (min-width: 768px) {
     .header {
         justify-content: space-around;
@@ -596,7 +597,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 3rem;
+    margin: 1rem;
 }
 
 .img-equipo {
@@ -662,8 +663,8 @@ footer {
 @media screen and (min-width: 768px) {
     .equipo-info {
         flex-direction: row;
-        gap: 3rem;
         align-items: center;
+        margin: 2rem;
     }
 
     .img-equipo {
@@ -691,6 +692,9 @@ footer {
 }
 
 @media screen and (min-width: 1080px) {
+    .equipo-info {
+        margin: 3rem;
+    }
     .contenedor-check {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
