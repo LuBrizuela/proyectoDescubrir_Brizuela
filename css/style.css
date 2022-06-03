@@ -319,9 +319,6 @@ footer {
         margin-top: 2rem;
     }
 
-    .contenedor-nosotros {
-        margin: 2rem;
-    }
 
     .img-nos {
         width: 500px;
@@ -478,7 +475,7 @@ footer {
     flex-direction: column;
     text-align: center;
     padding: 2rem 0;
-    background-color: var(--fondo);
+
 }
 
 .bot-let {
@@ -496,9 +493,6 @@ footer {
     flex-direction: column;
     margin: 1rem;
     padding: 1rem;
-    background-color: var(--fondo);
-    border: 3px solid #fff;
-    border-radius: 3px;
 }
 
 .fecha__info {
@@ -550,7 +544,7 @@ footer {
 
 
 .parrafo {
-    background-color: #fff;
+    background-color: var(--fondo);
     padding: 2rem;
     text-align: center;
     line-height: 2;
@@ -563,7 +557,8 @@ footer {
 
 @media screen and (min-width: 768px) {
     .fecha {
-        margin: 1rem 6rem;
+        margin: 1rem auto;
+        width: 90%;
     }
 
     .parrafo {
@@ -572,15 +567,19 @@ footer {
 }
 
 @media screen and (min-width: 1080px) {
-    .contenedor {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .contt {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
     }
-
+    .arrow_carrot-down:before {
+        content: "\33";
+    }
     .fecha {
-        margin: 2rem;
+        width: 60%;
+        margin: 2rem auto;
     }
-
     .parrafo {
         padding: 8rem;
     }
@@ -819,10 +818,8 @@ footer {
 }
 .hov:hover {
     transform: scale(1.1);
+    color: #fff;
 }
 .boton-let, .boton-lett {
     background-image: linear-gradient(45deg, #d379b9, #c27070);
-}
-.grad {
-    background-image: linear-gradient(#E1DAD2, #fff);
 }
