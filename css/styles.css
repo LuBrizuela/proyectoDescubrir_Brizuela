@@ -1,0 +1,635 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap");
+@font-face {
+  font-family: "back";
+  src: url(../fonts/Back-to-Black-Demo.ttf); }
+
+@font-face {
+  font-family: "bahn";
+  src: url(../fonts/BAHNSCHRIFT.TTF); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    color: #fff; }
+
+.body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "header" "main" "footer"; }
+
+.contenedor-header {
+  background-image: url(../img/portada.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: auto;
+  height: 45vh; }
+
+.header {
+  grid-area: header; }
+
+.main {
+  grid-area: main; }
+
+.footer {
+  grid-area: footer; }
+
+.nav-item a {
+  color: #263C4A !important; }
+  .nav-item a:hover {
+    color: #4A667B !important; }
+
+li {
+  font-size: 1rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: "bahn";
+  font-weight: 700; }
+
+.logo {
+  font-family: "back";
+  font-size: 2rem;
+  font-weight: 100;
+  color: #263C4A; }
+  .logo span {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 100; }
+
+.contenedor-titulo {
+  background-color: #E1DAD2;
+  padding: 5rem; }
+  .contenedor-titulo h1 {
+    color: #C78F8F;
+    font-family: "bahn";
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px; }
+    .contenedor-titulo h1 span {
+      color: #fff;
+      font-family: "back";
+      font-size: 2rem;
+      font-weight: 100;
+      text-transform: capitalize;
+      margin-top: 2rem; }
+
+.img-nos {
+  width: 100%; }
+
+.nosotros-info {
+  margin: 2rem;
+  line-height: 2; }
+  .nosotros-info h2 {
+    font-family: "back";
+    font-weight: lighter;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #263C4A; }
+  .nosotros-info h3 {
+    font-family: "bahn";
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #C78F8F; }
+  .nosotros-info p {
+    font-family: "bahn";
+    font-size: 0.8rem;
+    text-align: justify; }
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  background-color: #4A667B;
+  text-align: center;
+  padding: 2rem 1rem; }
+  .servicios h2 {
+    color: #fff;
+    font-family: "back";
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: capitalize; }
+
+.contenedor-ser {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 1rem 2rem 1rem; }
+
+.tes {
+  font-family: "bahn";
+  color: #fff;
+  line-height: 2;
+  text-transform: uppercase;
+  border: 3px solid #fff;
+  padding: 2rem;
+  font-size: 0.8rem; }
+
+.boot {
+  position: relative; }
+
+.boton-let {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: max-content;
+  background-color: #C78F8F;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  font-family: "bahn";
+  color: #fff;
+  text-transform: uppercase; }
+
+.contenedor-cont {
+  background-color: #E1DAD2;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem; }
+  .contenedor-cont h1 {
+    color: #C78F8F;
+    font-family: "bahn";
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-top: 2rem; }
+    .contenedor-cont h1 span {
+      color: #263C4A;
+      font-family: "back";
+      font-size: 2rem;
+      font-weight: 100;
+      text-transform: capitalize; }
+  .contenedor-cont p {
+    color: #263C4A;
+    font-family: "bahn"; }
+
+.campo {
+  display: flex;
+  flex-direction: column; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  text-align: justify; }
+
+label {
+  color: #263C4A;
+  text-transform: uppercase;
+  font-family: "bahn";
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 5px; }
+
+.input {
+  padding: 1rem;
+  border: none; }
+
+.bottom {
+  color: #fff;
+  background-color: #C78F8F;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1rem;
+  border: none; }
+
+footer {
+  padding: 2rem;
+  background-color: #263C4A; }
+
+.lo {
+  color: #fff; }
+
+.contenedor-nosotros {
+  display: flex;
+  flex-direction: column; }
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.356); } }
+
+@media screen and (min-width: 768px) {
+  .contenedor-nosotros {
+    flex-direction: row; }
+  .img-nos {
+    width: 350px; }
+  .cont-img {
+    margin: 0 auto; }
+  .servicios {
+    padding: 2rem 3rem; }
+  .contenedor-ser {
+    gap: 3rem;
+    margin: 0 2rem 2rem 2rem; }
+  .contenedor-cont {
+    padding: 1rem 4rem; }
+  .formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
+    grid-template-areas: "nom tell" "cor asun" "men men" "boton boton"; }
+  .asun {
+    grid-area: asun; }
+  .nom {
+    grid-area: nom; }
+  .tell {
+    grid-area: tell; }
+  .cor {
+    grid-area: cor; }
+  .men {
+    grid-area: men; }
+  .campo {
+    margin: 1rem; }
+  .bottom {
+    margin: auto;
+    grid-area: boton; } }
+
+@media screen and (min-width: 1080px) {
+  .contenedor-header {
+    min-height: 100vh; }
+  .contenedor-nosotros {
+    flex-direction: row;
+    margin: 0; }
+  .cont-img {
+    margin-right: 0; }
+  .img-nos {
+    width: 500px; }
+  .nosotros-info {
+    padding: 0 1rem;
+    width: 50%; }
+    .nosotros-info p {
+      font-size: 1rem; }
+  .servicios {
+    margin: 0;
+    padding: 5rem; }
+  .contenedor-ser {
+    flex-direction: row; }
+  .boot {
+    position: relative; }
+  .boton-let {
+    position: absolute;
+    left: 0;
+    right: 0; }
+  .contenedor-cont {
+    padding: 1rem 7rem; }
+  .formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0.5fr) 1fr;
+    grid-template-areas: "nom tell" "cor asun" "men men" "boton boton"; }
+  .asun {
+    grid-area: asun; }
+  .nom {
+    grid-area: nom; }
+  .tell {
+    grid-area: tell; }
+  .cor {
+    grid-area: cor; }
+  .men {
+    grid-area: men; }
+  .campo {
+    margin: 1rem; }
+  .bottom {
+    margin: auto;
+    grid-area: boton; } }
+
+/* CAPACITACIONES */
+.contenedor-nosotros {
+  display: flex; }
+
+.blog-info {
+  background-color: #E1DAD2;
+  padding: 2rem;
+  margin-bottom: 2rem; }
+  .blog-info h2 {
+    font-family: "back";
+    font-weight: lighter;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #263C4A; }
+  .blog-info h3 {
+    font-family: "bahn";
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #C78F8F; }
+  .blog-info p {
+    font-family: "bahn";
+    font-size: 1rem;
+    text-align: justify;
+    color: #263C4A; }
+
+.agenda {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0; }
+  .agenda h1 {
+    font-family: "back";
+    font-weight: lighter;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #263C4A;
+    text-align: center; }
+
+.fecha {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  padding: 1rem; }
+
+.fecha__info {
+  font-family: "bahn";
+  color: #000; }
+
+.horario {
+  color: #000;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 1rem; }
+
+.titulos {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: "bahn";
+  margin: 1rem 0; }
+
+.nom-dis {
+  color: grey;
+  text-transform: uppercase;
+  font-family: "bahn";
+  font-size: 1rem; }
+
+.calendario {
+  width: 100px; }
+
+.boton-lett {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  background-color: #C78F8F;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  font-family: "bahn";
+  color: #fff;
+  text-transform: uppercase; }
+
+.parrafo {
+  background-color: #E1DAD2;
+  padding: 2rem;
+  text-align: center;
+  line-height: 2; }
+  .parrafo p {
+    color: #4A667B;
+    font-family: "bahn"; }
+  .parrafo h3 {
+    font-family: "bahn";
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #C78F8F; }
+
+@media screen and (min-width: 768px) {
+  .fecha {
+    margin: 1rem auto;
+    width: 90%; }
+  .parrafo {
+    padding: 4rem; } }
+
+@media screen and (min-width: 1080px) {
+  .contt {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem; }
+  .arrow_carrot-down:before {
+    content: "\33"; }
+  .fecha {
+    width: 60%;
+    margin: 2rem auto; }
+  .parrafo {
+    padding: 8rem; } }
+
+/* SERVICIOS */
+.tit {
+  color: #4A667B; }
+
+.equipo-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem; }
+
+.eq-inf h2 {
+  color: #263C4A;
+  font-family: "bahn";
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px; }
+
+.eq-inf h3 {
+  font-family: "bahn";
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #C78F8F; }
+
+.eq-inf p {
+  font-family: "bahn";
+  font-size: 0.8rem;
+  text-align: justify; }
+
+.img-equipo {
+  display: flex;
+  justify-content: center; }
+
+.im-eq {
+  width: 60%; }
+
+.cheks {
+  background-color: #E1DAD2;
+  padding: 2rem; }
+
+.title {
+  color: #263C4A;
+  font-family: "back";
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 1rem; }
+
+.cheks__txt {
+  display: flex;
+  flex-direction: row;
+  color: #263C4A;
+  font-family: "bahn";
+  margin: 1rem;
+  font-weight: 100; }
+
+.icon-tabler-check {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 50%;
+  height: 25%;
+  margin-right: 1rem; }
+
+.img-per {
+  width: 80%;
+  border-radius: 50%;
+  margin: 0 auto; }
+
+.per {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "bahn";
+  text-transform: capitalize;
+  margin-bottom: 1.5rem; }
+
+.eq {
+  margin: 2rem; }
+
+@media screen and (min-width: 768px) {
+  .equipo-info {
+    flex-direction: row;
+    align-items: center;
+    margin: 2rem; }
+  .img-equipo {
+    width: 50%;
+    margin: 0; }
+  .eq-inf {
+    width: 50%; }
+  .icon-tabler-check {
+    width: 10%; }
+  .img-per {
+    width: 50%; }
+  .eq {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); } }
+
+@media screen and (min-width: 1080px) {
+  .equipo-info {
+    margin: 3rem; }
+  .contenedor-check {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 5rem; }
+  .p {
+    font-size: 1rem; } }
+
+/* CONTACTO */
+.portada-ser {
+  margin: 0; }
+
+.por-ser {
+  width: 100%; }
+
+.contenedor-hea {
+  background-image: url(../img/portada-cont.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: auto;
+  height: 45vh; }
+
+/* BLOG */
+.contenedor-blog {
+  background-image: url(../img/escritorio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: auto;
+  height: 45vh; }
+
+.blog-info {
+  background-color: #E1DAD2;
+  padding: 2rem;
+  margin-bottom: 2rem; }
+
+.blog-info p {
+  color: #263C4A;
+  font-family: "bahn";
+  text-align: center;
+  font-size: 1rem; }
+
+.entrada,
+.entrada2 {
+  border-bottom: 8px double #e1e1e1;
+  margin: 0 1rem 2rem 1rem; }
+
+.entrada:last-of-type {
+  border-bottom: none; }
+
+.entrada2:last-of-type {
+  border-bottom: none; }
+
+.entrada__contenido {
+  margin: 0 auto;
+  font-family: "bahn"; }
+
+.entrada__imagen,
+.entrada__imagen2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem; }
+
+.entrada__contenido h2 {
+  font-weight: 100;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #263C4A; }
+
+.entrada__contenido p span {
+  color: #a0a0a0;
+  text-transform: capitalize;
+  font-style: italic;
+  font-size: 1rem; }
+
+.img-blog {
+  width: 70%; }
+
+@media screen and (min-width: 768px) {
+  .entrada,
+  .entrada2 {
+    display: flex;
+    border-bottom: none; }
+  .entrada2 {
+    flex-direction: row-reverse; }
+  .entrada__imagen {
+    border-right: 8px double #e1e1e1; }
+  .entrada__imagen2 {
+    border-left: 8px double #e1e1e1; }
+  .img-blog {
+    margin: 0 4rem;
+    width: 25vw; }
+  .entrada__contenido {
+    width: 60%;
+    margin: 0 4rem;
+    align-self: center; } }
+
+@media screen and (min-width: 1080px) {
+  .blog-info {
+    padding: 4rem; }
+  .entrada,
+  .entrada2 {
+    width: 85%;
+    margin: 2rem auto; } }
+
+.hov {
+  transition: all 0.3s ease-in; }
+  .hov:hover {
+    transform: scale(1.1);
+    color: #fff; }
