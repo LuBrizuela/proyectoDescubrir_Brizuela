@@ -26,6 +26,16 @@ a {
     }
 }
 
+.boton {
+    width: max-content;
+    background-color: $cuadro;
+    padding: 0.5rem;
+    margin: 1rem auto;
+    font-family: "bahn";
+    color: #fff;
+    text-transform: uppercase;
+}
+
 .body {
     display: grid;
     grid-template-columns: 1fr;
@@ -40,8 +50,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    width: auto;
-    height: 45vh;
+    @include sizes(auto,45vh);
 }
 
 .header {
@@ -181,17 +190,12 @@ li {
 }
 
 .boton-let {
+    @extend .boton;
     position: absolute;
     left: 0;
     right: 0;
-    width: max-content;
-    background-color: $cuadro;
     text-align: center;
-    padding: 0.5rem;
-    margin: 1rem auto;
-    font-family: "bahn";
-    color: #fff;
-    text-transform: uppercase;
+
 }
 
 .contenedor-cont {
@@ -527,15 +531,9 @@ footer {
 }
 
 .boton-lett {
+    @extend .boton;
     display: flex;
     align-items: center;
-    width: max-content;
-    background-color: $cuadro;
-    padding: 0.5rem;
-    margin: 1rem auto;
-    font-family: "bahn";
-    color: #fff;
-    text-transform: uppercase;
 }
 
 .parrafo {
@@ -658,8 +656,7 @@ footer {
 .icon-tabler-check {
     background-color: #fff;
     border-radius: 50%;
-    width: 50%;
-    height: 25%;
+    @include sizes(50%,25%);
     margin-right: 1rem;
 }
 
@@ -746,8 +743,8 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    width: auto;
-    height: 45vh;
+    @include sizes(auto,45vh);
+
 }
 
 
@@ -757,8 +754,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    width: auto;
-    height: 45vh;
+    @include sizes(auto,45vh);
 }
 
 .blog-info {
@@ -870,5 +866,21 @@ footer {
     &:hover {
         transform: scale(1.1);
         color: #fff;
+    }
+}
+i {
+    font-size: 2rem;
+    @include sizes(3rem,3rem);
+    color: #fff;
+    border-radius: 50%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+@each $red, $color in $colores-redes {
+    .#{$red}{
+        @extend i;
+        background-color: $color;
     }
 }

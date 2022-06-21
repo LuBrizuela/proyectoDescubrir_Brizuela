@@ -17,6 +17,15 @@ a {
   a:hover {
     color: #fff; }
 
+.boton, .boton-let, .boton-lett {
+  width: max-content;
+  background-color: #C78F8F;
+  padding: 0.5rem;
+  margin: 1rem auto;
+  font-family: "bahn";
+  color: #fff;
+  text-transform: uppercase; }
+
 .body {
   display: grid;
   grid-template-columns: 1fr;
@@ -138,14 +147,7 @@ li {
   position: absolute;
   left: 0;
   right: 0;
-  width: max-content;
-  background-color: #C78F8F;
-  text-align: center;
-  padding: 0.5rem;
-  margin: 1rem auto;
-  font-family: "bahn";
-  color: #fff;
-  text-transform: uppercase; }
+  text-align: center; }
 
 .contenedor-cont {
   background-color: #E1DAD2;
@@ -375,14 +377,7 @@ footer {
 
 .boton-lett {
   display: flex;
-  align-items: center;
-  width: max-content;
-  background-color: #C78F8F;
-  padding: 0.5rem;
-  margin: 1rem auto;
-  font-family: "bahn";
-  color: #fff;
-  text-transform: uppercase; }
+  align-items: center; }
 
 .parrafo {
   background-color: #E1DAD2;
@@ -633,3 +628,22 @@ footer {
   .hov:hover {
     transform: scale(1.1);
     color: #fff; }
+
+i, .facebook, .whatsapp, .instagram {
+  font-size: 2rem;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  border-radius: 50%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center; }
+
+.facebook {
+  background-color: #3b5998; }
+
+.whatsapp {
+  background-color: #00bb2d; }
+
+.instagram {
+  background-color: #dd2a7b; }

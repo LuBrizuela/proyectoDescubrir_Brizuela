@@ -2,3 +2,10 @@ $principal: #263C4A;
 $fuenteSecundaria: #4A667B;
 $cuadro: #C78F8F;
 $fondo: #E1DAD2;
+
+$colores-redes:(facebook:#3b5998, whatsapp: #00bb2d, instagram: #dd2a7b);
+
+@mixin sizes($width,$height) {
+    width: $width;
+    height: $height;
+}
