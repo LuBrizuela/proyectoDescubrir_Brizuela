@@ -96,6 +96,18 @@ li {
     }
 }
 
+.logo1 {
+    font-family: "back";
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: $principal;
+
+    .capital1 {
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+}
 .contenedor-titulo {
     background-color: $fondo;
     padding: 5rem;
@@ -110,7 +122,7 @@ li {
         letter-spacing: 4px;
 
         span {
-            color: #fff;
+            color: $principal;
             font-family: "back";
             font-size: 2rem;
             font-weight: 100;
@@ -151,6 +163,18 @@ li {
         text-align: justify;
     }
 }
+/* CARROUSEL*/
+.tex-carrousel {
+    background-color: rgba(255, 255, 255, 0.651);
+    h5 {
+        color: $principal;
+        font-weight: 700;
+    }
+    p {
+        color: $principal;
+        font-weight: 600;
+    }
+}
 
 .servicios {
     display: flex;
@@ -165,6 +189,7 @@ li {
         font-size: 2rem;
         font-weight: 100;
         text-transform: capitalize;
+        margin-bottom: 2rem;
     }
 }
 
@@ -226,6 +251,7 @@ li {
     p {
         color: $principal;
         font-family: "bahn";
+        text-align: center;
     }
 }
 
@@ -538,7 +564,7 @@ footer {
 
 .parrafo {
     background-color: $fondo;
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
     line-height: 2;
 
@@ -562,7 +588,7 @@ footer {
     }
 
     .parrafo {
-        padding: 4rem;
+        padding: 2rem;
     }
 }
 
@@ -584,7 +610,7 @@ footer {
     }
 
     .parrafo {
-        padding: 8rem;
+        padding: 4rem;
     }
 }
 
@@ -640,7 +666,6 @@ footer {
     font-family: "back";
     font-size: 2rem;
     text-align: center;
-    text-transform: capitalize;
     margin-top: 1rem;
 }
 
@@ -747,7 +772,11 @@ footer {
 
 }
 
-
+/* MAPA*/ 
+.mapa {
+    width: 100vw;
+    margin: 0;
+}
 /* BLOG */
 .contenedor-blog {
     background-image: url(../img/escritorio.jpg);
@@ -805,6 +834,7 @@ footer {
     color: $principal;
 }
 
+
 .entrada__contenido p span {
     color: #a0a0a0;
     text-transform: capitalize;
@@ -859,8 +889,11 @@ footer {
         margin: 2rem auto;
     }
 }
-
 .hov {
+    background-color: $principal;
+}
+.hov,
+.hov1 {
     transition: all 0.3s ease-in;
 
     &:hover {

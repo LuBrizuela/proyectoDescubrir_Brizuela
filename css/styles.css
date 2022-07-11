@@ -71,6 +71,16 @@ li {
     font-size: 3rem;
     font-weight: 100; }
 
+.logo1 {
+  font-family: "back";
+  font-size: 1.3rem;
+  font-weight: 100;
+  color: #263C4A; }
+  .logo1 .capital1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 100; }
+
 .contenedor-titulo {
   background-color: #E1DAD2;
   padding: 5rem; }
@@ -83,7 +93,7 @@ li {
     text-transform: uppercase;
     letter-spacing: 4px; }
     .contenedor-titulo h1 span {
-      color: #fff;
+      color: #263C4A;
       font-family: "back";
       font-size: 2rem;
       font-weight: 100;
@@ -112,6 +122,16 @@ li {
     font-size: 0.8rem;
     text-align: justify; }
 
+/* CARROUSEL*/
+.tex-carrousel {
+  background-color: rgba(255, 255, 255, 0.651); }
+  .tex-carrousel h5 {
+    color: #263C4A;
+    font-weight: 700; }
+  .tex-carrousel p {
+    color: #263C4A;
+    font-weight: 600; }
+
 .servicios {
   display: flex;
   flex-direction: column;
@@ -123,7 +143,8 @@ li {
     font-family: "back";
     font-size: 2rem;
     font-weight: 100;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    margin-bottom: 2rem; }
 
 .contenedor-ser {
   display: flex;
@@ -171,7 +192,8 @@ li {
       text-transform: capitalize; }
   .contenedor-cont p {
     color: #263C4A;
-    font-family: "bahn"; }
+    font-family: "bahn";
+    text-align: center; }
 
 .campo {
   display: flex;
@@ -381,7 +403,7 @@ footer {
 
 .parrafo {
   background-color: #E1DAD2;
-  padding: 2rem;
+  padding: 0.5rem;
   text-align: center;
   line-height: 2; }
   .parrafo p {
@@ -398,7 +420,7 @@ footer {
     margin: 1rem auto;
     width: 90%; }
   .parrafo {
-    padding: 4rem; } }
+    padding: 2rem; } }
 
 @media screen and (min-width: 1080px) {
   .contt {
@@ -412,7 +434,7 @@ footer {
     width: 60%;
     margin: 2rem auto; }
   .parrafo {
-    padding: 8rem; } }
+    padding: 4rem; } }
 
 /* SERVICIOS */
 .tit {
@@ -460,7 +482,6 @@ footer {
   font-family: "back";
   font-size: 2rem;
   text-align: center;
-  text-transform: capitalize;
   margin-top: 1rem; }
 
 .cheks__txt {
@@ -539,6 +560,11 @@ footer {
   position: relative;
   width: auto;
   height: 45vh; }
+
+/* MAPA*/
+.mapa {
+  width: 100vw;
+  margin: 0; }
 
 /* BLOG */
 .contenedor-blog {
@@ -624,8 +650,13 @@ footer {
     margin: 2rem auto; } }
 
 .hov {
+  background-color: #263C4A; }
+
+.hov,
+.hov1 {
   transition: all 0.3s ease-in; }
-  .hov:hover {
+  .hov:hover,
+  .hov1:hover {
     transform: scale(1.1);
     color: #fff; }
 
